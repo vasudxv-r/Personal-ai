@@ -32,10 +32,11 @@ git clone https://github.com/vasudxv-r/Personal-ai.git
 cd Personal-ai
 
 Run the assistant:
+
 python agent.py console
 
 Personal‑ai/
-├── agent.py       # Handles I/O loop and AI calls
-├── prompt.py      # Defines intro & response variables
+├── agent.py
+├── prompt.py
 ├── Requirements.txt
-└── .env.example   # For any needed secrets or configs
+└── .env.example
