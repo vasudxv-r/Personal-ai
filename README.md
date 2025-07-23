@@ -34,9 +34,3 @@ cd Personal-ai
 Run the assistant:
 
 python agent.py console
-
-Personal‑ai/
-├── agent.py
-├── prompt.py
-├── Requirements.txt
-└── .env.example
