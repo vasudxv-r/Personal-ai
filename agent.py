@@ -14,7 +14,7 @@ from prompt import Agent_intro, Agent_res
 
 class Assistant(Agent):
     def __init__(self) -> None:
-        super().__init__(instructions="You are a helpful voice AI assistant.")
+        super().__init__(instructions=Agent_intro)
 
 
 async def entrypoint(ctx: agents.JobContext):
@@ -23,7 +23,7 @@ async def entrypoint(ctx: agents.JobContext):
         model="gemini-2.0-flash-exp",
         voice="Puck",
         temperature=0.8,
-        instructions="You are a helpful assistant",
+        instructions=Agent_intro,
     ),
     )
 
@@ -39,7 +39,7 @@ async def entrypoint(ctx: agents.JobContext):
     )
 
     await session.generate_reply(
-        instructions="Greet the user and offer your assistance."
+        instructions=Agent_res
     )
 
 
