@@ -15,7 +15,7 @@ A simple, personal AI assistant built in Python—designed to be lightweight, fr
 **Core files**:
 
 - `agent.py` — runs the main assistant loop
-- `prompt.py` — contains `jarvis_intro` and `jarvis_response` variables
+- `prompt.py` — contains `jarvis_introduction` and `jarvis_response` variables
 
 ---
 
