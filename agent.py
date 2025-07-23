@@ -9,12 +9,12 @@ from livekit.plugins import (
 
 load_dotenv()
 
-from prompt import Agent_intro, Agent_res
+from prompt import Agent_introduction, Agent_response
 
 
 class Assistant(Agent):
     def __init__(self) -> None:
-        super().__init__(instructions=Agent_intro)
+        super().__init__(instructions=Agent_introduction)
 
 
 async def entrypoint(ctx: agents.JobContext):
@@ -23,7 +23,7 @@ async def entrypoint(ctx: agents.JobContext):
         model="gemini-2.0-flash-exp",
         voice="Puck",
         temperature=0.8,
-        instructions=Agent_intro,
+        instructions=Agent_introduction,
     ),
     )
 
@@ -39,7 +39,7 @@ async def entrypoint(ctx: agents.JobContext):
     )
 
     await session.generate_reply(
-        instructions=Agent_res
+        instructions=Agent_response
     )
 
 
